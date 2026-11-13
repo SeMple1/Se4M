@@ -1,19 +1,27 @@
 # SeMple1 — GitHub Hub
 
-A dark, responsive GitHub developer dashboard designed to match the supplied reference image.
+[**Open the live GitHub Dashboard**](https://semple1-github-hub.vercel.app/)
 
-## Features
-- Profile sidebar with GitHub avatar, account details and follow link
-- Live public repositories, total stars, followers and account age from GitHub's public API
-- Contribution heatmap for the last 52 weeks via the public [GitHub Contributions API](https://github.com/grubersjoe/github-contributions-api)
-- Tech-stack pills and language doughnut chart calculated from public repository language data
-- Notable projects with working GitHub links and sorting (stars / activity / name)
-- Responsive desktop and mobile layout, accessible markup and reduced-motion support
+A dark, responsive GitHub developer dashboard based on the supplied screenshot: circular avatar sidebar, four statistics cards, 52-week contribution heatmap, technology stack, language doughnut and highlighted repositories.
 
-Private repositories are never queried or displayed. The public GitHub API can rate-limit anonymous requests, so the dashboard displays an unavailable state instead of invented data.
+## Live features
+- Real GitHub profile, public-repository count, stars, followers and account age
+- 52-week contribution heatmap from the [public contributions API](https://github.com/grubersjoe/github-contributions-api)
+- Tech-stack chips and language percentages from public repository language statistics
+- Notable public repositories, sortable by stars, latest activity or name
+- Responsive desktop/mobile design; no packages, build, cookies, secrets or API token required
 
-## Run
-Open index.html in a browser. Hosting on Vercel or GitHub Pages uses the same file without a build step.
+**Privacy:** Only public GitHub data is requested. Private repositories are not displayed. If an API is unavailable, affected data shows an unavailable state rather than invented values. Third-party contribution data is cached by its provider.
 
-## GitHub profile integration
-GitHub does not allow arbitrary HTML/CSS to replace the native github.com/SeMple1 profile layout. Link to this dashboard from the profile's website field or a special public repository named SeMple1/SeMple1 with README.md.
+## Source and deployment
+- Main website source: [index.html](./index.html)
+- Live URL: https://semple1-github-hub.vercel.app/
+- Hosting: Vercel, production linked to this GitHub repository
+- Editable local copy: C:\Users\Guoba\Documents\GitHub-Hub\
+
+## Show it on your native GitHub profile
+GitHub does not support custom HTML/CSS in the native GitHub profile. Create a **public** repository named exactly **SeMple1** under your account, with a README.md. GitHub displays that README on https://github.com/SeMple1. Include this link:
+
+[Explore my interactive GitHub Dashboard](https://semple1-github-hub.vercel.app/)
+
+You can also add the live URL under GitHub profile Edit profile → Website.
